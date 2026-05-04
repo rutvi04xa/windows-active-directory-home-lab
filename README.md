@@ -29,6 +29,11 @@ https://knowledge.broadcom.com/external/article?articleNumber=368667
 
 ## Installing and Configuring Active Directory Tools and Promote as DC
 
-- Explain Steps to install Actve Directory on Windows Server 2022:
-    for this first go to Open Server Manager → Manage → Add Roles and Features
+To install Active Directory Domain Services (AD DS) on Windows Server 2022, the installation is performed through Server Manager using the Add Roles and Features wizard.
+
+Open **Server Manager → Manage → Add Roles and Features**
+
+![Select Installation Type](screenshots/select-installation-type.png)
+Select **Role-based or feature-based installation** to proceed with AD DS setup.
+  
   
