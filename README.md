@@ -35,5 +35,34 @@ Open **Server Manager → Manage → Add Roles and Features**
 
 ![Select Installation Type](screenshots/select-installation-type.png)
 Select **Role-based or feature-based installation** to proceed with AD DS setup.
+
+---
+
+![Select Destination Server](screenshots/Select-Destination-Server.png)
+Choose the local server where Active Directory will be installed.
+
+---
+
+![Select Server Roles](screenshots/Select-Server-Role.png)
+Select **Active Directory Domain Services (AD DS)/DNS server/Remote Access/** from the list of roles.
+
+---
+
+![Select Features](screenshots/Select-Features.png)
+Keep default features and proceed with installation requirements.
+
+---
+
+![Installation Completed](screenshots/Installation-Completed.png)
+The AD DS role installation completes successfully and is ready for promotion to Domain Controller.
+
+---
+
+## Promoting Server to Domain Controller
+
+After installing Active Directory Domain Services (AD DS), the server is promoted to a Domain Controller to create a new domain environment.
+
+
+
   
   
