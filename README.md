@@ -26,3 +26,9 @@ https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022
 
 - VMware Workstation Pro 17:  
 https://knowledge.broadcom.com/external/article?articleNumber=368667
+
+## Installing and Configuring Active Directory Tools and Promote as DC
+
+- Explain Steps to install Actve Directory on Windows Server 2022:
+    for this first go to Open Server Manager → Manage → Add Roles and Features
+  
