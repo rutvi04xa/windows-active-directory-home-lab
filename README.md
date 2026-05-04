@@ -62,7 +62,31 @@ The AD DS role installation completes successfully and is ready for promotion to
 
 After installing Active Directory Domain Services (AD DS), the server is promoted to a Domain Controller to create a new domain environment.
 
+Clicked on **“Promote this server to a domain controller”** to configure the system as part of a domain environment.
 
+> **Note:** This option appears in **Server Manager → Notifications (flag icon)** after the Active Directory Domain Services (AD DS) installation is completed.
 
-  
+A new forest was created by defining the domain name "master.local", followed by configuring essential Domain Controller settings such as DNS and Global Catalog. A secure DSRM password was set, prerequisites were validated, and the installation was completed successfully with an automatic system restart.
+
+---
+
+![Deployment Configuration](screenshots/deployment-configuration.png)
+Configured a new forest and defined the domain name: master.local.
+
+---
+
+![NETBIOS Domain Name](screenshots/NETBIOS-domain-name.png)
+System automatically generated and verified the NetBIOS domain name.
+
+---
+
+![Login with Domain](screenshots/login-page-with-domain.png)
+Server successfully restarted and domain login is now available.
+
+## Active Directory Basic Configuration
+
+After promoting the server to a Domain Controller, the Active Directory environment was structured by organizing resources using Organizational Units (OUs), groups, and user accounts.
+
+Organizational Units were created to logically separate departments, followed by nested OUs for better hierarchy. Security/Distribution groups were then created within OUs, and user accounts were added and assigned to appropriate groups for access management.
+
   
