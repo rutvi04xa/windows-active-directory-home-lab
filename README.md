@@ -158,4 +158,57 @@ In this view, all Organizational Units, Groups, and Users are organized under th
 Group Policy Management Console (GPMC)
 
 > **Note:** Group Policy Management Console (GPMC) can be accessed from **Server Manager → Tools → Group Policy Management**.  
-> If not available, it can be installed by going to **Server Manager → Add Roles and Features → Features → Group Policy Management**. 
+> If not available, it can be installed by going to **Server Manager → Add Roles and Features → Features → Group Policy Management**.
+---
+
+### 📌 Types of Group Policy Settings
+
+> **Note:** Group Policy settings are divided into two main categories based on how they are applied:
+
+- **Computer Configuration**  
+  These settings apply to the computer itself, regardless of which user logs in. Once applied, they affect the system as a whole.
+
+- **User Configuration**  
+  These settings apply to users. They are applied when a user logs in and affect user-specific environments such as desktop settings and preferences.
+
+---
+
+### 📊 Group Policy Structure Overview
+
+```mermaid
+flowchart TD
+
+    A[🟦 Group Policy]
+
+    A --> B[🖥️ Computer Configuration]
+    A --> C[👤 User Configuration]
+
+    B --> B1[📁 Policies]
+    B --> B2[⚙️ Preferences]
+
+    B1 --> B1a[🔒 Password Policy]
+    B1 --> B1b[🚫 Account Lockout Policy]
+
+    B2 --> B2a[🖧 System Settings]
+    B2 --> B2b[📜 Startup Scripts]
+
+    C --> C1[📁 Policies]
+    C --> C2[⚙️ Preferences]
+
+    C1 --> C1a[🔐 Security Policies]
+    C1 --> C1b[🚷 User Restrictions]
+
+    C2 --> C2a[📂 Mapped Drives]
+    C2 --> C2b[🖨️ Printers]
+    C2 --> C2c[🖥️ Desktop Shortcuts]
+
+    %% Styling (THIS is what you were missing)
+    classDef main fill:#1f4e79,color:#fff,stroke:#0b2a3d,stroke-width:2px;
+    classDef comp fill:#2e75b6,color:#fff,stroke:#1f4e79;
+    classDef user fill:#6fa8dc,color:#000,stroke:#1f4e79;
+    classDef item fill:#e7f1ff,color:#000,stroke:#2e75b6;
+
+    class A main;
+    class B,B1,B2 comp;
+    class C,C1,C2 user;
+    class B1a,B1b,B2a,B2b,C1a,C1b,C2a,C2b,C2c item;
