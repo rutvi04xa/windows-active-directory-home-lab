@@ -201,14 +201,45 @@ flowchart TD
     C2 --> C2a[📂 Mapped Drives]
     C2 --> C2b[🖨️ Printers]
     C2 --> C2c[🖥️ Desktop Shortcuts]
+```
+### GPO Configuration Demo Activities
 
-    %% Styling (THIS is what you were missing)
-    classDef main fill:#1f4e79,color:#fff,stroke:#0b2a3d,stroke-width:2px;
-    classDef comp fill:#2e75b6,color:#fff,stroke:#1f4e79;
-    classDef user fill:#6fa8dc,color:#000,stroke:#1f4e79;
-    classDef item fill:#e7f1ff,color:#000,stroke:#2e75b6;
+### Demo 1: Password Policy
 
-    class A main;
-    class B,B1,B2 comp;
-    class C,C1,C2 user;
-    class B1a,B1b,B2a,B2b,C1a,C1b,C2a,C2b,C2c item;
+![Password Policy Configuration](screenshots/password-policy.png)
+
+Password Policy was configured using Group Policy (Computer Configuration) to enforce domain-wide security standards. The policy ensures users follow strong password rules such as minimum length and complexity, improving overall account security across the domain.
+
+---
+
+> **📝 Note: How this GPO was created**
+
+- Open **Group Policy Management Console (GPMC)**
+- Right-click on **Group Policy Objects → New**
+- Enter a name (e.g., Password Policy)
+- Right-click the created GPO → **Edit**
+- Navigate to:  
+  `Computer Configuration → Policies → Windows Settings → Security Settings → Account Policies → Password Policy`
+- Configure required password settings
+- Link the GPO to the required **Organizational Unit (OU)**
+- Run `gpupdate /force` to apply changes
+
+### Demo 2:Control Panel Restriction
+
+![Control Panel Restriction](screenshots/control-panel-restriction.png)
+
+Control Panel access was restricted using Group Policy (User Configuration) to prevent users from changing system settings and maintaining system security and standardization across the domain.
+
+---
+
+> **📝 Note: How this GPO was created**
+
+- Open **Group Policy Management Console (GPMC)**
+- Right-click on **Group Policy Objects → New**
+- Enter a name (e.g., Control Panel Restriction)
+- Right-click the created GPO → **Edit**
+- Navigate to:  
+  `User Configuration → Policies → Administrative Templates → Control Panel`
+- Enable the policy **"Prohibit access to Control Panel and PC settings"**
+- Link the GPO to the required **Organizational Unit (OU)**
+- Run `gpupdate /force` to apply changes
