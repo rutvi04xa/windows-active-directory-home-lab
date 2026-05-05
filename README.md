@@ -98,4 +98,27 @@ In this view, all Organizational Units, Groups, and Users are organized under th
 
 ### Organizational Unit (OU) Creation
 
-Organizational Units were created to logically structure and manage domain resources efficiently.
+> **Note:** Organizational Units are created in **Active Directory Users and Computers** by right-clicking the domain → New → Organizational Unit.
+
+![Creating OU 1](screenshots/creating-ou-1.png)
+![Creating OU 2](screenshots/creating-ou-2.png)
+![Creating OU 3](screenshots/creating-ou-3.png)
+
+---
+
+## Group Creation
+
+> **Note:** Groups are created inside an OU by right-clicking → New → Group, then selecting group type (Security or Distribution).
+
+![Creating Group 1](screenshots/creating-group-1.png)
+![Creating Group 2](screenshots/creating-group-2.png)
+![Creating Group 3](screenshots/creating-group-3.png)
+![Creating Group 4](screenshots/creating-group-4.png)
+
+## User Account Creation
+
+> **Note:** User accounts are created inside an OU by right-clicking → New → User and entering required details.
+
+![Creating User 1](screenshots/creating-user-1.png)
+![Creating User 2](screenshots/creating-user-2.png)
+![Creating User 3](screenshots/creating-user-3.png)
