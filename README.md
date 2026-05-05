@@ -256,7 +256,7 @@ After applying the GPO, when user Aesha logged into the Windows 10 virtual machi
 
 ![Account Lockout Policy Configuration](screenshots/account-lockout-policy.png)
 
-![Verified](screenshots/account-lockout-policy.png)
+![Verified](screenshots/verified-GPO-2.png)
 
 Account Lockout Policy was configured using Group Policy (Computer Configuration) to enhance security by preventing unauthorized access attempts.
 
