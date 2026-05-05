@@ -226,7 +226,7 @@ Password Policy was configured using Group Policy (Computer Configuration) to en
 
 ### Demo 2:Control Panel Restriction
 
-![Control Panel Restriction](screenshots/control-panel-restriction.png)
+![Control Panel Restriction](screenshots/restricted-control-panel.png)
 
 Control Panel access was restricted using Group Policy (User Configuration) to prevent users from changing system settings and maintaining system security and standardization across the domain.
 
