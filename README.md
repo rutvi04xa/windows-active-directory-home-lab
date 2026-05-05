@@ -143,6 +143,44 @@ In this view, all Organizational Units, Groups, and Users are organized under th
 
 ![Add user to group](screenshots/users-to-group.png)
 
+## 🌐 Windows Network Configuration (Server & Client Setup)
+
+The Windows Server was configured with a **static IP address (192.168.x.x range)** to ensure stable communication within the Active Directory environment.
+
+The Domain Controller was configured with the following network settings:
+
+- Static IP assigned in the **192.168.x.x private network range**
+- DNS configured with:
+  - **Loopback address (127.0.0.1)**
+  - **Google DNS (8.8.8.8)** for external name resolution
+
+---
+
+### 💻 Client VM Configuration
+
+The Windows 10 client (**COMPUTER01**) machine was configured to use the **Windows Server IP address (192.168.x.x)** as its DNS server.  
+
+This ensures all domain name resolution requests are handled by the Domain Controller, which is required for:
+- Domain joining
+- Active Directory authentication
+- Group Policy application
+
+---
+
+### 🛠️ Summary of Configuration
+
+- Windows Server set to **static IP (192.168.x.x)**
+- DNS configured as:
+  - 127.0.0.1 (Loopback)
+  - 8.8.8.8 (Google DNS)
+- Client VM (**COMPUTER01**) DNS set to **Windows Server IP (192.168.x.x)**
+- Enables proper **Active Directory communication and DNS resolution**
+
+## 💻 Add Computer to Domain
+
+![Add Computer to Domain](screenshots/.png)
+A Windows 10 client machine (**COMPUTER01**) was successfully joined to the Active Directory domain created on the Windows Server.
+
 <br>
 
 ## 📌 2 — Group Policy Management (GPO) Setup
