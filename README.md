@@ -106,7 +106,7 @@ In this view, all Organizational Units, Groups, and Users are organized under th
 
 ---
 
-## Group Creation
+### Group Creation
 
 > **Note:** Groups are created inside an OU by right-clicking → New → Group, then selecting group type (Security or Distribution).
 
@@ -115,10 +115,16 @@ In this view, all Organizational Units, Groups, and Users are organized under th
 ![Creating Group 3](screenshots/creating-group-3.png)
 ![Creating Group 4](screenshots/creating-group-4.png)
 
-## User Account Creation
+### User Account Creation
 
 > **Note:** User accounts are created inside an OU by right-clicking → New → User and entering required details.
 
 ![Creating User 1](screenshots/creating-user-1.png)
 ![Creating User 2](screenshots/creating-user-2.png)
 ![Creating User 3](screenshots/creating-user-3.png)
+
+### User Assignment to Groups
+
+> **Note:** Users can then be assigned to groups by opening user properties → Member Of → Add.
+
+
