@@ -139,3 +139,23 @@ In this view, all Organizational Units, Groups, and Users are organized under th
 > **Note:** Users can then be assigned to groups by opening user properties → Member Of → Add.
 
 ![Add user to group](screenshots/users-to-group.png)
+
+
+![Add user to group](screenshots/users-to-group.png)
+
+<br>
+
+## 📌 2 — Group Policy Management (GPO) Setup
+
+### Prerequisites
+
+1. **Windows Server Installation:** Windows Server 2022 is installed and running on a virtual machine.  
+2. **Active Directory Domain Services (AD DS):** Domain Controller is configured with a working domain environment.  
+3. **Group Policy Management Console (GPMC):** GPMC is available through Server Manager → Tools for managing Group Policy Objects (GPOs).
+
+
+![Group Policy Management Console](screenshots/group-policy-management-console.png)
+Group Policy Management Console (GPMC)
+
+> **Note:** Group Policy Management Console (GPMC) can be accessed from **Server Manager → Tools → Group Policy Management**.  
+> If not available, it can be installed by going to **Server Manager → Add Roles and Features → Features → Group Policy Management**. 
