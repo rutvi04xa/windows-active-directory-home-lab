@@ -178,7 +178,7 @@ This ensures all domain name resolution requests are handled by the Domain Contr
 
 ## 💻 Add Computer to Domain
 
-![Add Computer to Domain](screenshots/.png)
+![Add Computer to Domain](screenshots/add-client-vm-to-domain.png)
 A Windows 10 client machine (**COMPUTER01**) was successfully joined to the Active Directory domain created on the Windows Server.
 
 <br>
