@@ -244,7 +244,7 @@ Control Panel access was restricted using Group Policy (User Configuration) to p
 - Run `gpupdate /force` to apply changes
 
  ### (Applied & Verified)
-
+![GPO Applied to User - Aesha](screenshots/applied-gpo-to-ou.png)
 ![Control Panel Blocked in Windows 10 VM](screenshots/verified-GPO-1.png)
 
 Control Panel Restriction GPO was linked to the **Users OU (Canada OU)** and applied to the user **Aesha**. This policy prevents users from accessing Control Panel and system settings.
