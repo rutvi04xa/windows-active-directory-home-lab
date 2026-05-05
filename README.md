@@ -227,7 +227,6 @@ Password Policy was configured using Group Policy (Computer Configuration) to en
 ### Demo 2:Control Panel Restriction
 
 ![Control Panel Restriction](screenshots/restricted-control-panel.png)
-
 Control Panel access was restricted using Group Policy (User Configuration) to prevent users from changing system settings and maintaining system security and standardization across the domain.
 
 ---
@@ -243,3 +242,11 @@ Control Panel access was restricted using Group Policy (User Configuration) to p
 - Enable the policy **"Prohibit access to Control Panel and PC settings"**
 - Link the GPO to the required **Organizational Unit (OU)**
 - Run `gpupdate /force` to apply changes
+
+ ### (Applied & Verified)
+
+![Control Panel Blocked in Windows 10 VM](screenshots/verified-GPO-1.png)
+
+Control Panel Restriction GPO was linked to the **Users OU (Canada OU)** and applied to the user **Aesha**. This policy prevents users from accessing Control Panel and system settings.
+
+After applying the GPO, when user Aesha logged into the Windows 10 virtual machine, access to Control Panel was successfully blocked, confirming that the policy was correctly applied.
