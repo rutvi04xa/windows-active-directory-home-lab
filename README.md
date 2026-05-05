@@ -250,3 +250,18 @@ Control Panel access was restricted using Group Policy (User Configuration) to p
 Control Panel Restriction GPO was linked to the **Users OU (Canada OU)** and applied to the user **Aesha**. This policy prevents users from accessing Control Panel and system settings.
 
 After applying the GPO, when user Aesha logged into the Windows 10 virtual machine, access to Control Panel was successfully blocked, confirming that the policy was correctly applied.
+
+
+## 🔐 Account Lockout Policy (Applied & Verified)
+
+![Account Lockout Policy Configuration](screenshots/account-lockout-policy.png)
+
+![Verified](screenshots/account-lockout-policy.png)
+
+Account Lockout Policy was configured using Group Policy (Computer Configuration) to enhance security by preventing unauthorized access attempts.
+
+This policy locks the user account after a defined number of failed login attempts, protecting the domain from brute-force attacks.
+
+After applying the policy, multiple failed login attempts triggered account lockout, confirming that the GPO was successfully enforced.
+
+---
