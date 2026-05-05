@@ -115,6 +115,17 @@ In this view, all Organizational Units, Groups, and Users are organized under th
 ![Creating Group 3](screenshots/creating-group-3.png)
 ![Creating Group 4](screenshots/creating-group-4.png)
 
+> **Note:** Active Directory groups are defined by **Group Type** and **Group Scope**.  
+> 
+> **Group Type:**  
+> - Security Groups → Used for assigning permissions to resources  
+> - Distribution Groups → Used only for grouping users (no permissions)  
+> 
+> **Group Scope:**  
+> - Domain Local → Used for assigning permissions within the same domain  
+> - Global → Used to group users from the same domain for broader access  
+> - Universal → Used across multiple domains within a forest
+
 ### User Account Creation
 
 > **Note:** User accounts are created inside an OU by right-clicking → New → User and entering required details.
