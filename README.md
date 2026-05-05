@@ -127,4 +127,4 @@ In this view, all Organizational Units, Groups, and Users are organized under th
 
 > **Note:** Users can then be assigned to groups by opening user properties → Member Of → Add.
 
-
+![Add user to group](screenshots/users-to-group.png)
