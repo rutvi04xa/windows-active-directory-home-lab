@@ -89,4 +89,13 @@ After promoting the server to a Domain Controller, the Active Directory environm
 
 Organizational Units were created to logically separate departments, followed by nested OUs for better hierarchy. Security/Distribution groups were then created within OUs, and user accounts were added and assigned to appropriate groups for access management.
 
-  
+![Active Directory Users and Computers View](screenshots/users-computers-view.png)
+In this view, all Organizational Units, Groups, and Users are organized under the **master.local** domain.
+
+> **Note:** Active Directory Users and Computers can be opened by running `dsa.msc` or through **Server Manager → Tools → Active Directory Users and Computers**.
+
+---
+
+### Organizational Unit (OU) Creation
+
+Organizational Units were created to logically structure and manage domain resources efficiently.
