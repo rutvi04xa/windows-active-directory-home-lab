@@ -303,3 +303,22 @@ This policy locks the user account after a defined number of failed login attemp
 After applying the policy, multiple failed login attempts triggered account lockout, confirming that the GPO was successfully enforced.
 
 ---
+
+## 📌 3 — Network Drive Access & Automation
+
+### Manual Network Drive Mapping
+
+![Manual Network Drive Mapping](screenshots/manual-mapping.png)
+
+A network drive was manually mapped on the Windows 10 client machine (**COMPUTER01**) using File Explorer.
+
+The shared folder was accessed using the network path:
+`\\servername\shared-folder`
+
+Drive **S:** was assigned to the shared folder. The option **"Reconnect at sign-in"** was unchecked, making the mapping temporary.
+
+After mapping, the shared folder was successfully visible under **This PC** as drive **S:**.
+
+However, this method has a limitation — after system reboot, the mapped drive is no longer available, making it unsuitable for regular use.
+
+
