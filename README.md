@@ -323,4 +323,16 @@ After mapping, the shared folder was successfully visible under **This PC** as d
 
 However, this method has a limitation — after system reboot, the mapped drive is no longer available, making it unsuitable for regular use.
 
+### Network Drive Mapping using GPO (Automated)
 
+![Network Drive GPO](screenshots/network-drive-1.png)
+![Network Drive GPO](screenshots/network-drive-2.png)
+![Network Drive GPO](screenshots/network-drive-3.png)
+
+To solve the limitation of manual mapping, a Group Policy Object (GPO) was created to automate network drive mapping for users.
+
+The mapped drive (**S:**) and shared folder location were configured within the GPO and linked to the **Users OU**.
+
+After applying the policy and logging into the client machine (**COMPUTER01**), the network drive was automatically mapped and available without manual configuration.
+
+Even after system reboot, the mapped drive remained accessible, confirming successful automation through Group Policy.
