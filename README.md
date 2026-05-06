@@ -326,7 +326,7 @@ However, this method has a limitation — after system reboot, the mapped drive 
 ### Network Drive Mapping using GPO (Automated)
 
 ![Network Drive GPO](screenshots/network-drive-1.png)
-![Network Drive GPO](screenshots/network-drive-2.png)
+
 ![Network Drive GPO](screenshots/network-drive-3.png)
 
 To solve the limitation of manual mapping, a Group Policy Object (GPO) was created to automate network drive mapping for users.
@@ -336,3 +336,20 @@ The mapped drive (**S:**) and shared folder location were configured within the 
 After applying the policy and logging into the client machine (**COMPUTER01**), the network drive was automatically mapped and available without manual configuration.
 
 Even after system reboot, the mapped drive remained accessible, confirming successful automation through Group Policy.
+
+### 🌍 Real-World Scenario
+
+In real enterprise environments, shared folders are commonly used for departments such as HR, Finance, and IT to store and access centralized data.
+
+Manual mapping is not practical in large organizations because:
+- Users would need to configure drives individually
+- Mappings may be lost after reboot or system changes
+- Increased support workload for IT teams
+
+Using Group Policy for drive mapping:
+- Automatically provides access to required shared folders for all users
+- Ensures consistency across the organization
+- Reduces manual configuration and support effort
+- Improves user experience and productivity
+
+This approach is widely used in enterprise networks to manage shared resources efficiently and securely.
