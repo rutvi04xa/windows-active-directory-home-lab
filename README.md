@@ -308,7 +308,9 @@ After applying the policy, multiple failed login attempts triggered account lock
 
 ### Manual Network Drive Mapping
 
-![Manual Network Drive Mapping](screenshots/manual-mapping.png)
+![Manual Mapped Drives](screenshots/mapped-drives-1.png)
+
+![Manual Mapped Drives](screenshots/mapped-drives-2.png)
 
 A network drive was manually mapped on the Windows 10 client machine (**COMPUTER01**) using File Explorer.
 
