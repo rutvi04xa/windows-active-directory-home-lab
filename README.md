@@ -8,6 +8,29 @@ The lab also implements Group Policy Objects (GPOs) for system policy enforcemen
 <br />
 
 
+## 📌 Project Coverage: Concepts Implemented in This Lab
+
+The project includes the following key components:
+
+### 🖥️ Active Directory Setup
+- Installing Active Directory on Windows Server on Virtual Machine  
+### 🔐 Group Policy Management (GPO) Setup
+- Demo 1: Password Policy  
+- Demo 2: Control Panel Restriction  
+- Demo 3: Account Lockout Policy  
+### 🌐 Network Drive Access & Automation
+- Manual Network Drive Mapping  
+- Network Drive Mapping using Group Policy (Automated)  
+### 📁 Windows File Sharing & NTFS Permissions (Hands-on Activity)
+- Activity 1: Granting Read-Only Access to a Shared Folder  
+- Activity 2: Creating a Private Department Folder  
+- Activity 3: Temporary File Access for a Vendor  
+- Activity 4: Restricting Access to Specific Files Inside a Shared Folder
+
+## 🏗️ Active Directory Lab Architecture
+
+![Architecture](screenshots/)
+
 ## 📌 1 — Installing Active Directory on Windows Server on Virtual Machine
 
 
@@ -242,7 +265,7 @@ flowchart TD
 ```
 ### GPO Configuration Demo Activities
 
-### Demo 1: Password Policy
+### Demo 1:Password Policy
 
 ![Password Policy Configuration](screenshots/password-policy.png)
 
@@ -290,7 +313,7 @@ Control Panel Restriction GPO was linked to the **Users OU (Canada OU)** and app
 After applying the GPO, when user Aesha logged into the Windows 10 virtual machine, access to Control Panel was successfully blocked, confirming that the policy was correctly applied.
 
 
-## 🔐 Account Lockout Policy (Applied & Verified)
+## Demo 3 :Account Lockout Policy (Applied & Verified)
 
 ![Account Lockout Policy Configuration](screenshots/account-lockout-policy.png)
 
