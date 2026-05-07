@@ -406,3 +406,28 @@ This approach is widely used in enterprise networks to manage shared resources e
 
 ### ✔ Result
 Only users in the HRGroup can access and manage the folder. All other users are restricted from viewing or accessing it, ensuring full privacy and security for HR data.
+
+### Activity 3: Temporary File Access for a Vendor
+
+**Scenario:** A third-party vendor needs access to a temporary folder (\\Server\VendorFiles) to upload reports only. The vendor should not be able to modify or delete existing files.
+
+**Steps:**
+
+1. Set Share Permissions:
+- Right-click VendorFiles folder → Properties → Sharing tab → Advanced Sharing  
+- Add VendorUser → Set Full Control  
+
+📸 Share Permissions  
+![Vendor Share Permissions](screenshots/activity-3.1.png)
+
+2. Set NTFS Permissions:
+- Properties → Security tab → Edit  
+- Add VendorUser → Allow → write  
+- Ensure **Modify and Delete permissions are NOT granted**
+
+📸 NTFS Permissions  
+![Vendor NTFS Permissions](screenshots/activity-3.2.png)
+
+
+### ✔ Result
+The vendor can upload new files to the folder but cannot modify or delete existing files, ensuring controlled and secure temporary access.
