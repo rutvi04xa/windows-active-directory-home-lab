@@ -29,7 +29,7 @@ The project includes the following key components:
 
 ## 🏗️ Active Directory Lab Architecture
 
-![Architecture](screenshots/)
+![Architecture](screenshots/acitve-directory-home-lab-architechture.png)
 
 ## 📌 1 — Installing Active Directory on Windows Server on Virtual Machine
 
