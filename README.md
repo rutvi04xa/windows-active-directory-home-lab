@@ -353,3 +353,8 @@ Using Group Policy for drive mapping:
 - Improves user experience and productivity
 
 This approach is widely used in enterprise networks to manage shared resources efficiently and securely.
+
+## 📌 4 —  Windows File Sharing & NTFS Permissions (Hands-on Activity)
+
+![NTFS vs Share Permissions]()
+
