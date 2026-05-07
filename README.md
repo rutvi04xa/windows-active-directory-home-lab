@@ -356,5 +356,21 @@ This approach is widely used in enterprise networks to manage shared resources e
 
 ## 📌 4 —  Windows File Sharing & NTFS Permissions (Hands-on Activity)
 
-![NTFS vs Share Permissions]()
+![NTFS vs Share Permissions](screenshots/NTFS-vs-share-permission.png)
+
+### Activity 1: Granting Read-Only Access to a Shared Folder
+
+**Scenario:** A Marketing Intern needs access to the Marketing Team’s shared folder (\\Server\Marketing) to view content but should not modify or delete files.
+
+**Steps:**
+
+1. Modify Share Permissions:
+- Right-click Marketing folder → Properties → Sharing tab → Advanced Sharing  
+- Set Share Permissions:  
+  - MarketingTeam → Full Control  
+  - MarketingInterns → Read  
+
+2. Modify NTFS Permissions:
+- Properties → Security tab → Edit  
+- Add MarketingInterns → Set Read & Execute permission
 
