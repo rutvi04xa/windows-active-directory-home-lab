@@ -368,9 +368,14 @@ This approach is widely used in enterprise networks to manage shared resources e
 - Right-click Marketing folder → Properties → Sharing tab → Advanced Sharing  
 - Set Share Permissions:  
   - MarketingTeam → Full Control  
-  - MarketingInterns → Read  
+  - MarketingInterns → Read
+   
+📸 Share Permissions Configuration  
+![Share Permissions](screenshots/acitvity-1.2.png)
 
 2. Modify NTFS Permissions:
 - Properties → Security tab → Edit  
-- Add MarketingInterns → Set Read & Execute permission
+- Add MarketingInterns → Allow Read permission only
 
+📸 NTFS Permissions Configuration  
+![NTFS Permissions](screenshots/activitiy-1.1.png)
