@@ -431,3 +431,28 @@ Only users in the HRGroup can access and manage the folder. All other users are 
 
 ### ✔ Result
 The vendor can upload new files to the folder but cannot modify or delete existing files, ensuring controlled and secure temporary access.
+
+### Activity 4: Restricting Access to Specific Files Inside a Shared Folder
+
+**Scenario:** In the IT Department, all technicians need access to the Software Repository (Software), but only senior IT staff should be able to access the "Licenses" subfolder.
+
+**Steps:**
+
+1. Set Folder Permissions for \\Server\Software:
+- Right-click Software folder → Properties → Security tab  
+- Add ITStaff → Set Modify (can add, edit, and delete files within the main folder)
+
+📸 Software Folder Permissions  
+![Software Permissions](screenshots/activity-4.1.png)
+
+2. Set NTFS Permissions for \\Server\Software\Licenses:
+- Right-click Licenses folder → Properties → Security tab → Advanced  
+- Disable inheritance and remove inherited permissions  
+- Add SeniorIT → Full Control  
+
+📸 Licenses Folder Permissions  
+![Licenses Permissions](screenshots/activity-4.2.png)
+![Licenses Permissions](screenshots/activity-4.3.png)
+
+### ✔ Result
+All IT staff can access and work within the Software repository, but only Senior IT staff can access and manage the Licenses subfolder, ensuring strict access control for sensitive files.
