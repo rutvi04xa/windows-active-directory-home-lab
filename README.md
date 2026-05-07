@@ -379,3 +379,30 @@ This approach is widely used in enterprise networks to manage shared resources e
 
 📸 NTFS Permissions Configuration  
 ![NTFS Permissions](screenshots/activitiy-1.1.png)
+
+### Activity 2: Creating a Private Department Folder
+
+**Scenario:** The HR Department needs a secure folder (HRGroup) that only HR staff can access. Other employees should not be able to see or access the folder.
+
+**Steps:**
+
+1. Modify Share Permissions:
+- Right-click HRGroup folder → Properties → Sharing tab → Advanced Sharing  
+- Remove **Everyone**  
+- Add **HRGroup → Full Control**
+
+📸 Share Permissions Configuration  
+![HR Share Permissions](screenshots/activity-2.1.png)
+
+---
+2. Modify NTFS Permissions:
+- Properties → Security tab → Edit  
+- Remove **Everyone**  
+- Add **HRGroup → Full Control**
+
+📸 NTFS Permissions Configuration  
+![HR NTFS Permissions](screenshots/activity-2.2.png)
+
+
+### ✔ Result
+Only users in the HRGroup can access and manage the folder. All other users are restricted from viewing or accessing it, ensuring full privacy and security for HR data.
